@@ -1,0 +1,96 @@
+:root {
+    --main-color: rgb(103, 78, 167);
+    --sec-color: rgb(103, 78, 167, 0.1);
+    --main-border-radius: 6px;
+}
+
+* {
+    /*     box-sizing:border-box; */
+    /*   box-sizing: content-box; */
+}
+
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Nunito Sans', sans-serif;
+    padding: 0;
+    margin: 0;
+    user-select: none;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#header {
+    background: var(--main-color);
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+#new-todo {
+    margin-bottom: 10px;
+}
+
+#input-todo {
+    border-radius: var(--main-border-radius);
+    border: 1px solid var(--main-color);
+    font-size: 20px;
+    padding: 8px 16px;
+    width: 200px;
+}
+
+#input-todo:focus {
+    outline: 1px solid var(--main-color);
+    /*   outline: none; */
+}
+
+#submit-todo {
+    width: 40px;
+    margin-left: 10px;
+    border-radius: var(--main-border-radius);
+    border: 1px solid var(--main-color);
+    font-size: 20px;
+    padding: 8px;
+    text-align: center;
+    background-color: var(--main-color);
+    color: white;
+    user-select: none;
+}
+
+#submit-todo:hover {
+    cursor: pointer;
+    user-select: none;
+}
+
+.todo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: var(--main-border-radius);
+    background-color: var(--sec-color);
+    font-size: 20px;
+    padding: 16px;
+    width: 260px;
+    margin: 10px;
+}
+
+.todo:hover {
+    cursor: pointer;
+}
+
+/*  .delete {
+    height: 100%;
+    padding: 10px;
+    user-select: none;
+  } */
